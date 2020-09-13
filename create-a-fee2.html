@@ -31,7 +31,7 @@
           <p class="col-12 header__title">Регулярный сбор</p>
         </header>
         <div class="col-12">
-          <form action=""  id="form">
+          <form name="form" action="index.html" id="form">
             <input
               type="file"
               name="file"
@@ -91,7 +91,37 @@
             </select>
             <p class="fields_label">Автор</p>
             <input type="text" class="form__fields"placeholder="Как вас зовут" />
-            <input type="submit" value="Создать сбор" class="btn" />
+            <input type="submit" value="Создать сбор" class="btn"  onclick="saveFee()"/>
+
+            <script>
+              function saveFee() {
+                var form = document.forms.form,
+                  formData = new FormData(form);
+
+                var newObject = {
+                  type: "1",
+                  img: "2",
+                  name: "3",
+                  summ: "4",
+                  target: "5",
+                  about: "6",
+                  account: "7",
+                  finaly: "8",
+                  author: "9",
+                };
+                var id = getRandomID(0, 1679615);
+
+                var feesList = JSON.parse(localStorage.getItem("feesList"));
+
+                if (feesList == null) {
+                  var feesList = {};
+                }
+
+                feesList[id] = newObject;
+
+                localStorage.setItem("feesList", JSON.stringify(feesList));
+              }
+            </script>
           </form>
           <style>
             /* эти стили для кнопки загрузки изображения, чтобы изменить надпись, можжешь их поменять, не забудь убрать их в файил стилей */

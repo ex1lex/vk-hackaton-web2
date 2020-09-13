@@ -27,21 +27,86 @@
   <body>
     <!-- Классы container row col- это классы bootstrap, к ним свои стили лучше не применять. -->
     <div class="container">
-      <div class="row content">
+      <div class="row content" id="content-container">
         <!-- Это заголовок, типа хеадер -->
         <header class="content__header">
-          <p class="col-12 header__title">Пожертвования</p>        
+          <p class="col-12 header__title">Пожертвования</p>
         </header>
         <!-- Это здесь по сути список, но так как бекенд нас не интересует, то здесь просто кнопка для создания сбора -->
         <div class="col-12 content__main">
           <div class="main__text">
             <p>У вас пока нет сборов.<br />Начните доброе дело.</p>
           </div>
-          
+
           <a href="create-a-fee1.html" class="btn">Целевой сбор</a>
-          <a href="create-a-fee2.html" class="btn">Регулярный сбор</a>                
-          
+          <a href="create-a-fee2.html" class="btn">Регулярный сбор</a>
         </div>
+        <style>
+          /* эти стили нужны потому что убирают лишние свойства в высплывающем окне */
+          .modal-content {
+            border-radius: 10px;
+          }
+
+          .modal-header {
+            border: 0;
+            padding: 0;
+          }
+
+          .modal-title {
+          }
+
+          .modal-body {
+            padding: 0;
+          }
+
+          .modal-footer {
+            border: 0;
+            padding: 0;
+            justify-content: left;
+          }
+        </style>
+        <ul class="col-12 row">
+          <li class="col-3 fee">
+            <h1 id="label-name">
+              Тестовый сбор на этом применяешь стили. Кнопку нажми
+            </h1>
+            <button data-toggle="modal" data-target="#exampleModalCenter">
+              Подробнее
+            </button>
+            <div
+              class="modal fade"
+              id="exampleModalCenter"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="exampleModalCenterTitle"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="modal-title">Modal title</h5>
+                  </div>
+                  <div class="modal-body">
+                    <img src="" alt="" />тут картинка, вставь сюда ссылку
+                    какую-нибудь картинку и стилизуй, а то так не видно
+                    <h2>Название сбора</h2>
+                    <h3>Автор</h3>
+                    <h3>Нужно собрать за месяц: СУММА</h3>
+                    <p>Описание</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="" data-dismiss="modal">
+                      Закрыть
+                    </button>
+                    <a href="http://www.vk.com" target="_blank"
+                      >Опубликовать на стене</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
       </div>
     </div>
   </body>
