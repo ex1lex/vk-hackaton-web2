@@ -25,21 +25,13 @@
   </head>
 
   <body>
-    <!-- Классы container row col- это классы bootstrap, к ним свои стили лучше не применять. -->
-    <div class="container">
-      <div class="row content">
-        <!-- Это заголовок, типа хеадер -->
-        <header class="content__header">
-          <p class="col-12 header__title">Пожертвования</p>        
-        </header>
-        <!-- Это здесь по сути список, но так как бекенд нас не интересует, то здесь просто кнопка для создания сбора -->
-        <div class="col-12 content__main">
-          <div class="main__text">
-            <p>У вас пока нет сборов.<br />Начните доброе дело.</p>
-          </div>
-          
-          <a href="create-a-fee.html" class="btn">Сбор средств</a>                
-          
+    <div class="container page">
+      <div class="row">
+        <p class="col-12">Пожертвования</p>
+        <div class="col-12">
+          <p>У вас пока нет сборов.<br />Начните доброе дело.</p>
+          <button class="">Создать сбор</button>
+          <a href="create-a-fee.html">Создать сбор</a>
         </div>
       </div>
     </div>

@@ -1,19 +1,138 @@
-* {
-  padding: 0%;
-  margin: 0%;
+@font-face {
+	font-family: "SFP Medium";
+	src: url("../sources/fonts/SFProDisplay-Medium.ttf");
 }
 
+@font-face {
+	font-family: "SFP Thin";
+	src: url("../sources/fonts/SFProDisplay-Thin.ttf");
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  background: #ccc;
+  padding: 0;
+  margin: 0;
+  background-color: #fff;
+}
+
+.container {
+	height: 100%;
+}
+
+.content {
+	text-align: center;
+	height: 100%;
+}
+
+.content__header {
+	width: 100%;
+	height: 60px;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+.header__title {
+	font-family: "SFP Medium";
+	margin: 0px;
+}
+
+.main__text {
+	font-family: "SFP Thin";
+	color: #818C99;
+
+}
+
+.main__btn_block {
+	width: 100%;
+	box-sizing: border-box;
+	/*margin-left: 20%;*/
+	margin-right: 70%; 
+}
+
+.main__create_fee__button {
+	display: flex;
+	flex-direction: row;
+	padding: 0px;
+
+/*	position: absolute;
+	width: 133px;
+	height: 36px;
+	left: calc(50% - 133px/2 + 0.5px);
+	top: 16px;*/
+}
+
+.btn {
+	padding: 8px 16px;
+	background: #4986CC;
+	border-radius: 10px;
+	color: white;
+}
+
+
 @media (max-width: 576px) {
+
+.header__title {
+	font-size: 24px;
+}
+
+.main__text {
+	font-size: 14px;
+}
+
 }
 
 @media (min-width: 577px) and (max-width: 768px) {
+
+.header__title {
+	font-size: 36px;
+}
+
+.main__text {
+	font-size: 20px;
+}
+
 }
 
 @media (min-width: 769px) and (max-width: 992px) {
+
+.header__title {
+	font-size: 36px;
+}
+
+.main__text {
+	font-size: 20px;
+}
+
 }
 
 @media (min-width: 993px) and (max-width: 1200px) {
+
+.header__title {
+	font-size: 48px;
+}
+
+.main__text {
+	font-size: 24px;
+}
+
 }
 
 @media (min-width: 1200px) {
+
+
+.header__title {
+	font-size: 48px;
+}
+
+.main__text {
+	font-size: 24px;
+}
+
 }
