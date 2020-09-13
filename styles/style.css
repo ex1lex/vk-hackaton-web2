@@ -130,8 +130,29 @@ html, body {
 	text-align: center;
 }
 
-input[type="submit"] {
+.modal__img {
+	width: 100%; 
+	border: 0px; 
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
 
+.modal__author {
+	font-family: "SFP Medium";
+}
+
+#modal__progressbar {
+	height: 10px;
+	width: 250px;
+}
+
+#modal__progressbar::-webkit-progress-bar {
+	background: #3F8AE0;
+	opacity: 0.3;
+}
+
+#modal__progressbar::-webkit-progress-value {
+	background: #3F8AE0;
 }
 
 @media (max-width: 576px) {

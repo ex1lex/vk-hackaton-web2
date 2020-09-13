@@ -66,13 +66,13 @@
           }
         </style>
         <ul class="col-12 row">
-          <li class="col-3 fee">
-            <h1 id="label-name">
+          <li class="col-12 fee">
+            <!-- <h1 id="label-name">
               Тестовый сбор на этом применяешь стили. Кнопку нажми
             </h1>
             <button data-toggle="modal" data-target="#exampleModalCenter">
               Подробнее
-            </button>
+            </button> -->
             <div
               class="modal fade"
               id="exampleModalCenter"
@@ -83,22 +83,20 @@
             >
               <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="modal-title">Modal title</h5>
-                  </div>
                   <div class="modal-body">
-                    <img src="" alt="" />тут картинка, вставь сюда ссылку
-                    какую-нибудь картинку и стилизуй, а то так не видно
-                    <h2>Название сбора</h2>
-                    <h3>Автор</h3>
-                    <h3>Нужно собрать за месяц: СУММА</h3>
-                    <p>Описание</p>
+                    <img src="../vk-hackaton-web2/sources/img/cat.jpg" alt="" class="modal__img"/>
+                    <h2 class="modal__name">Кошечкам на еду</h2>
+                    <span style="font-family: 'SFP Thin'; font-family: 12px;">Автор</span>
+                    <div>
+                       <progress id="modal__progressbar" value="30" max="100"></progress>
+                    </div>
+                    <p style="font-family: 'SFP Medium'; font-family: 12px;">Кошечки тоже любят есть</p>
                   </div>
-                  <div class="modal-footer">
-                    <button type="button" class="" data-dismiss="modal">
+                  <div class="modal-footer" style="text-align: center;">
+                    <button type="button" class="btn" data-dismiss="modal" style="width: 100%;">
                       Закрыть
                     </button>
-                    <a href="http://www.vk.com" target="_blank"
+                    <a href="http://www.vk.com" target="_blank" style="padding: 8px 16px;background: #E5EBF1;border-radius: 10px;color: #55677D; text-decoration: none; width: 100%;"
                       >Опубликовать на стене</a
                     >
                   </div>

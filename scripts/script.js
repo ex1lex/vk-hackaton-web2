@@ -24,9 +24,9 @@ $(document).ready(function () {
     var ul = document.getElementById("fee-container");
 
     let li = document.createElement("li");
-    li.className = "col-12 col-sm-12 col-md-4 col-lg-3 col-xl-3 fee";
+    li.className = "col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 fee";
     li.innerHTML =
-      "<h1> Тестовый сбор</h1> <button data-toggle='modal' data-target='#exampleModalCenter'> Подробнее </button> <div class='modal fade' id='exampleModalCenter' tabindex='-1' role='dialog' aria-labelledby='exampleModalCenterTitle' aria-hidden='true' > <div class='modal-dialog modal-dialog-centered' role='document'> <div class='modal-content'> <div class='modal-header'> <h5 class='modal-title' id='exampleModalLongTitle'> Modal title </h5> </div> <div class='modal-body'>///</div> <div class='modal-footer'> <button type='button' class='' data-dismiss='modal'> Закрыть </button> </div> </div> </div> </div>";
+      "<h1> Тестовый сбор</h1> <button class='btn' data-toggle='modal' data-target='#exampleModalCenter'> Подробнее </button> <div class='modal fade' id='exampleModalCenter' tabindex='-1' role='dialog' aria-labelledby='exampleModalCenterTitle' aria-hidden='true' > <div class='modal-dialog modal-dialog-centered' role='document'> <div class='modal-content'> <div class='modal-header'> <h5 class='modal-title' id='exampleModalLongTitle'> Modal title </h5> </div> <div class='modal-body'>///</div> <div class='modal-footer'> <button type='button' class='' data-dismiss='modal'> Закрыть </button> </div> </div> </div> </div>";
     ul.append(li);
   }
 
