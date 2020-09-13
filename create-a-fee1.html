@@ -32,22 +32,20 @@
         </header>
         <div class="col-12">
           <form  name="form" action="index.html" id="form">
-            <input
-              type="file"
-              name="file"
-              id="file-selector"
-              class="inputfile"
-            />
-            <label for="file-selector" id="file-selector__label" style="position:relative;">
-              <img id="output" style="width: 100%;" />
-              <p style="position:absolute; top: 40%; left: 35%; color: #3F8AE0; font-family: 'SFP Medium'; font-size: 16px">
-                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M13.3083 0C15.8978 0 17.1262 0.237232 18.4021 0.919585C19.5542 1.53571 20.4643 2.44582 21.0804 3.59786C21.7628 4.87375 22 6.10224 22 8.69166V13.3083C22 15.8978 21.7628 17.1262 21.0804 18.4021C20.4643 19.5542 19.5542 20.4643 18.4021 21.0804C17.1262 21.7628 15.8978 22 13.3083 22H8.69166C6.10224 22 4.87375 21.7628 3.59786 21.0804C2.44582 20.4643 1.53571 19.5542 0.919585 18.4021C0.237232 17.1262 0 15.8978 0 13.3083V8.69166C0 6.10224 0.237232 4.87375 0.919585 3.59786C1.53571 2.44582 2.44582 1.53571 3.59786 0.919585C4.87375 0.237232 6.10224 0 8.69166 0H13.3083ZM14.9791 12.4419L10.7771 17.6294C10.426 18.0628 9.78827 18.1253 9.35982 17.7682L7.06137 15.8528L3.96323 18.9516C4.14411 19.0857 4.33681 19.2076 4.54106 19.3168C5.4876 19.823 6.40417 20 8.69166 20H13.3083C15.5958 20 16.5124 19.823 17.4589 19.3168C18.2624 18.8871 18.8871 18.2624 19.3168 17.4589C19.4637 17.1842 19.5829 16.9121 19.6781 16.6082L14.9791 12.4419ZM13.3083 2H8.69166C6.40417 2 5.4876 2.177 4.54106 2.68321C3.73755 3.11293 3.11293 3.73755 2.68321 4.54106C2.177 5.4876 2 6.40417 2 8.69166V13.3083C2 15.5652 2.17229 16.4876 2.66305 17.4209L6.29289 13.7929C6.65861 13.4272 7.24286 13.4007 7.64018 13.7318L9.8612 15.5826L14.0831 10.3706C14.4417 9.92784 15.0972 9.87376 15.5236 10.2517L19.9887 14.2102C19.9964 13.9349 20 13.6356 20 13.3083V8.69166C20 6.40417 19.823 5.4876 19.3168 4.54106C18.8871 3.73755 18.2624 3.11293 17.4589 2.68321C16.5124 2.177 15.5958 2 13.3083 2ZM7.5 6C8.32843 6 9 6.67157 9 7.5C9 8.32843 8.32843 9 7.5 9C6.67157 9 6 8.32843 6 7.5C6 6.67157 6.67157 6 7.5 6Z" fill="#3F8AE0"/>
-</svg>
-Загрузить обложку
-              </p></label
-            >
-            <div></div>
+            <div>
+              <input type="file" name="file" id="file-selector" class="inputfile" />
+              <label for="file-selector" id="file-selector__label" style="position:relative;">
+                <img id="output" style="width: 100%;height: 100%;border-radius: 10px;" />
+                <p style="position:absolute; top: 40%; left: 35%; color: #3F8AE0; font-family: 'SFP Medium'; font-size: 16px">
+                  <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M13.3083 0C15.8978 0 17.1262 0.237232 18.4021 0.919585C19.5542 1.53571 20.4643 2.44582 21.0804 3.59786C21.7628 4.87375 22 6.10224 22 8.69166V13.3083C22 15.8978 21.7628 17.1262 21.0804 18.4021C20.4643 19.5542 19.5542 20.4643 18.4021 21.0804C17.1262 21.7628 15.8978 22 13.3083 22H8.69166C6.10224 22 4.87375 21.7628 3.59786 21.0804C2.44582 20.4643 1.53571 19.5542 0.919585 18.4021C0.237232 17.1262 0 15.8978 0 13.3083V8.69166C0 6.10224 0.237232 4.87375 0.919585 3.59786C1.53571 2.44582 2.44582 1.53571 3.59786 0.919585C4.87375 0.237232 6.10224 0 8.69166 0H13.3083ZM14.9791 12.4419L10.7771 17.6294C10.426 18.0628 9.78827 18.1253 9.35982 17.7682L7.06137 15.8528L3.96323 18.9516C4.14411 19.0857 4.33681 19.2076 4.54106 19.3168C5.4876 19.823 6.40417 20 8.69166 20H13.3083C15.5958 20 16.5124 19.823 17.4589 19.3168C18.2624 18.8871 18.8871 18.2624 19.3168 17.4589C19.4637 17.1842 19.5829 16.9121 19.6781 16.6082L14.9791 12.4419ZM13.3083 2H8.69166C6.40417 2 5.4876 2.177 4.54106 2.68321C3.73755 3.11293 3.11293 3.73755 2.68321 4.54106C2.177 5.4876 2 6.40417 2 8.69166V13.3083C2 15.5652 2.17229 16.4876 2.66305 17.4209L6.29289 13.7929C6.65861 13.4272 7.24286 13.4007 7.64018 13.7318L9.8612 15.5826L14.0831 10.3706C14.4417 9.92784 15.0972 9.87376 15.5236 10.2517L19.9887 14.2102C19.9964 13.9349 20 13.6356 20 13.3083V8.69166C20 6.40417 19.823 5.4876 19.3168 4.54106C18.8871 3.73755 18.2624 3.11293 17.4589 2.68321C16.5124 2.177 15.5958 2 13.3083 2ZM7.5 6C8.32843 6 9 6.67157 9 7.5C9 8.32843 8.32843 9 7.5 9C6.67157 9 6 8.32843 6 7.5C6 6.67157 6.67157 6 7.5 6Z"
+                      fill="#3F8AE0" />
+                  </svg>
+                  Загрузить обложку
+                </p>
+              </label>
+            </div>
             <script>
               // загрузка изображения будет в тег img с id=output
               const output = document.getElementById("output");
@@ -74,35 +72,35 @@
               }
             </script>
             <p class="fields_label">Название сбора</p>
-            <input type="text" class="form__fields"placeholder="Название сбора" />
+            <input type="text" class="form__fields"placeholder="Название сбора" id="name"/>
             <p class="fields_label">Сумма, &#8381;</p>
-            <input type="text" class="form__fields"placeholder="Сколько нужно собрать?" />
+            <input type="number" class="form__fields"placeholder="Сколько нужно собрать?" id="summ"/>
             <p class="fields_label">Цель</p>
-            <input type="text" class="form__fields"placeholder="Например, лечение человека" />
+            <input type="text" class="form__fields"placeholder="Например, лечение человека" id="target"/>
             <p class="fields_label">Описание</p>
             <textarea
               type="text" class="form__fields" id="form__description_field"
               placeholder="На что пойдут деньги и как они кому-то помогут?"
             /></textarea>
             <p class="fields_label">Куда получать деньги</p>
-            <select class="form__fields">
+            <select class="form__fields" id="account">
               <option class="selector_point">Счёт 1</option>
               <option class="selector_point">Счёт 2</option>
             </select>
             <p class="fields_label">Сбор завершится</p>
-            <input type="radio" name="feeFinish" id="" value="" class="radiobtn"/>
+            <input type="radio" name="feeFinish" id="" value="radio1" class="radiobtn"/>
             <span>Когда соберём сумму</span>
             <input
               type="radio"
               name="feeFinish"
               id=""
-              value=""
+              value="radio2"
               class="radio-date radiobtn"
             />
             <span>В определённую дату</span>
             <div class="input-date">
-              <p>Дата окончания</p>
-              <input type="date" class="form__fields"name="" id="" />
+              <p class="fields_label">Дата окончания</p>
+              <input type="date" class="form__fields"name="" id="date-finaly" />
             </div>
             <style>
               .input-date {
@@ -113,24 +111,35 @@
               }
             </style>
             <p class="fields_label">Автор</p>
-            <input type="text" class="form__fields"placeholder="Как вас зовут" />
-            <input type="submit" value="Создать сбор" class="btn" onclick="saveFee()"/>
+            <input type="text" class="form__fields"placeholder="Как вас зовут" id="author" />
+            <input type="submit" value="Создать сбор" class="btn" onclick="saveFee()" style="margin-top: 15px;display: flex;margin-left: auto;margin-right: auto;"/>
 
             <script>
               function saveFee() {
                 var form = document.forms.form,
                   formData = new FormData(form);
 
+                  bannerImage = document.getElementById('output');
+                imgData = getBase64Image(bannerImage);
+                
+                var radio = document.querySelector('input[name="feeFinish"]:checked').value;
+                var finaly;
+                if (radio == "radio1") {
+                  finaly = "finalSumm";
+                } else {
+                  finaly = document.getElementById("date-finaly").value;
+                }
+                
                 var newObject = {
-                  type: "1",
-                  img: "2",
-                  name: "3",
-                  summ: "4",
-                  target: "5",
-                  about: "6",
-                  account: "7",
-                  finaly: "8",
-                  author: "9",
+                  type: "fixed",
+                  img: imgData,
+                  name: document.getElementById("name").value,
+                  summ: document.getElementById("summ").value,
+                  target: document.getElementById("target").value,
+                  about: document.getElementById("form__description_field").value,
+                  account: document.getElementById("account").value,
+                  finaly: finaly,
+                  author: document.getElementById("author").value,
                 };
                 var id = getRandomID(0, 1679615);
 
@@ -152,7 +161,6 @@
               height: 0.1px;
               opacity: 0;
               overflow: hidden;
-              position: absolute;
               z-index: -1;
             }
             .inputfile:focus + label {

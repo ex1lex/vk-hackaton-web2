@@ -34,7 +34,7 @@
         </header>
         <!-- Это здесь по сути список, но так как бекенд нас не интересует, то здесь просто кнопка для создания сбора -->
         <div class="col-12 content__main">
-          <div class="main__text">
+          <div class="main__text" id="main-text">
             <p>У вас пока нет сборов.<br />Начните доброе дело.</p>
           </div>
 
@@ -45,6 +45,7 @@
           /* эти стили нужны потому что убирают лишние свойства в высплывающем окне */
           .modal-content {
             border-radius: 10px;
+            padding: 20px;
           }
 
           .modal-header {
@@ -65,46 +66,6 @@
             justify-content: left;
           }
         </style>
-        <ul class="col-12 row">
-          <li class="col-12 fee">
-            <!-- <h1 id="label-name">
-              Тестовый сбор на этом применяешь стили. Кнопку нажми
-            </h1>
-            <button data-toggle="modal" data-target="#exampleModalCenter">
-              Подробнее
-            </button> -->
-            <div
-              class="modal fade"
-              id="exampleModalCenter"
-              tabindex="-1"
-              role="dialog"
-              aria-labelledby="exampleModalCenterTitle"
-              aria-hidden="true"
-            >
-              <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                  <div class="modal-body">
-                    <img src="../vk-hackaton-web2/sources/img/cat.jpg" alt="" class="modal__img"/>
-                    <h2 class="modal__name">Кошечкам на еду</h2>
-                    <span style="font-family: 'SFP Thin'; font-family: 12px;">Автор</span>
-                    <div>
-                       <progress id="modal__progressbar" value="30" max="100"></progress>
-                    </div>
-                    <p style="font-family: 'SFP Medium'; font-family: 12px;">Кошечки тоже любят есть</p>
-                  </div>
-                  <div class="modal-footer" style="text-align: center;">
-                    <button type="button" class="btn" data-dismiss="modal" style="width: 100%;">
-                      Закрыть
-                    </button>
-                    <a href="http://www.vk.com" target="_blank" style="padding: 8px 16px;background: #E5EBF1;border-radius: 10px;color: #55677D; text-decoration: none; width: 100%;"
-                      >Опубликовать на стене</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-          </li>
-        </ul>
       </div>
     </div>
   </body>

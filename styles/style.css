@@ -1,19 +1,27 @@
 @font-face {
-	font-family: "SFP Medium";
-	src: url("../sources/fonts/SFProDisplay-Medium.ttf");
+  font-family: "SFP Medium";
+  src: url("../sources/fonts/SFProDisplay-Medium.ttf");
 }
 
 @font-face {
-	font-family: "SFP Thin";
-	src: url("../sources/fonts/SFProDisplay-Thin.ttf");
+  font-family: "SFP Thin";
+  src: url("../sources/fonts/SFProDisplay-Thin.ttf");
 }
 
+a:active,
+a:focus,
+a:visited {
+  text-decoration: none;
+  border: none;
+}
 
 * {
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
+  padding-bottom: 100px;
   width: 100%;
   height: 100%;
   background: #ccc;
@@ -23,45 +31,45 @@ html, body {
 }
 
 .container {
-	height: 100%;
+  padding-bottom: 100px;
+  /* height: 100%; */
 }
 
 .content {
-	text-align: center;
-	height: 100%;
+  text-align: center;
+  /* height: 100%; */
 }
 
 .content__header {
-	width: 100%;
-	height: 60px;
-	box-sizing: border-box;
-	text-align: center;
+  width: 100%;
+  height: 60px;
+  box-sizing: border-box;
+  text-align: center;
 }
 
 .header__title {
-	font-family: "SFP Medium";
-	margin: 0px;
+  font-family: "SFP Medium";
+  margin: 0px;
 }
 
 .main__text {
-	font-family: "SFP Thin";
-	color: #818C99;
-
+  font-family: "SFP Thin";
+  color: #818c99;
 }
 
 .main__btn_block {
-	width: 100%;
-	box-sizing: border-box;
-	/*margin-left: 20%;*/
-	margin-right: 70%; 
+  width: 100%;
+  box-sizing: border-box;
+  /*margin-left: 20%;*/
+  margin-right: 70%;
 }
 
 .main__create_fee__button {
-	display: flex;
-	flex-direction: row;
-	padding: 0px;
+  display: flex;
+  flex-direction: row;
+  padding: 0px;
 
-/*	position: absolute;
+  /*	position: absolute;
 	width: 133px;
 	height: 36px;
 	left: calc(50% - 133px/2 + 0.5px);
@@ -69,49 +77,56 @@ html, body {
 }
 
 .btn {
-	padding: 8px 16px;
-	background: #4986CC;
-	border-radius: 10px;
-	color: white;
+  margin-top: 15px;
+  padding: 8px 16px;
+  background: #4986cc;
+  border-radius: 10px;
+  color: white;
 }
 
 .btn:hover {
-	background: #E5EBF1;
-	color: #55677D;
+  background: #e5ebf1;
+  color: #55677d;
 }
 
 .fields_label {
-	font-family: "SFP Thin";
-	color: #818C99;
-	margin-bottom: 0px;
-	margin-top: 15px;
+  font-family: "SFP Thin";
+  color: #818c99;
+  margin-bottom: 0px;
+  margin-top: 15px;
 }
 
 .form__fields {
-	width: 100%;
-	height: 45px;
-	background: #F2F3F5;
-	border-radius: 10px;
-	border: 0.5px solid rgba(0, 0, 0, 0.12);
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 100%;
+  height: 45px;
+  background: #f2f3f5;
+  border-radius: 10px;
+  border: 0.5px solid rgba(0, 0, 0, 0.12);
 }
 
 #form {
-	width: 50%;
-	height: 100%;
-	box-sizing: border-box;
-	margin-left: 25%;
-	margin-right: 25%;
-	text-align: left;
+  width: 50%;
+  height: 100%;
+  box-sizing: border-box;
+  margin-left: 25%;
+  margin-right: 25%;
+  text-align: left;
 }
 
 #form__description_field {
-	resize: none;
-	height: 60px;
+  resize: none;
+  height: 60px;
+}
+
+.fee-container {
+  margin-top: 50px;
 }
 
 .selector_point {
-	/*width: 100%;*/
-	background: #ff12
+  /*width: 100%;*/
+  /* background: #ff12; */
 }
 /*
 #file-selector {
@@ -120,158 +135,147 @@ html, body {
 }*/
 
 #file-selector__label {
-	margin-top: 20px;
-	width: 100%;
-	height: 160px;
-	box-sizing: border-box;
-	border: 2px dashed #3F8AE0;
-	border-radius: 10px;
-	outline: none;
-	text-align: center;
+  margin-top: 20px;
+  width: 100%;
+  height: 160px;
+  box-sizing: border-box;
+  border: 2px dashed #3f8ae0;
+  border-radius: 10px;
+  outline: none;
+  text-align: center;
 }
 
 .modal__img {
-	width: 100%; 
-	border: 0px; 
-	border-top-left-radius: 10px;
-	border-top-right-radius: 10px;
+  width: 100%;
+  border: 0px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .modal__author {
-	font-family: "SFP Medium";
+  font-family: "SFP Medium";
 }
 
 #modal__progressbar {
-	height: 10px;
-	width: 250px;
+  height: 10px;
+  width: 250px;
 }
 
 #modal__progressbar::-webkit-progress-bar {
-	background: #3F8AE0;
-	opacity: 0.3;
+  background: #3f8ae0;
+  opacity: 0.3;
 }
 
 #modal__progressbar::-webkit-progress-value {
-	background: #3F8AE0;
+  background: #3f8ae0;
 }
 
 @media (max-width: 576px) {
+  .header__title {
+    font-size: 24px;
+  }
 
-.header__title {
-	font-size: 24px;
-}
+  .main__text {
+    font-size: 14px;
+  }
 
-.main__text {
-	font-size: 14px;
-}
+  #file-selector__label {
+    height: 100px;
+  }
 
-#file-selector__label {
-	height: 100px;
-}
+  .fields_label {
+    font-size: 12px;
+  }
 
-.fields_label {
-	font-size: 12px;
-}
-
-.form__fields {
-	font-size: 12px;
-}
-
+  .form__fields {
+    font-size: 12px;
+  }
 }
 
 @media (min-width: 577px) and (max-width: 768px) {
+  .header__title {
+    font-size: 36px;
+  }
 
-.header__title {
-	font-size: 36px;
-}
+  .main__text {
+    font-size: 20px;
+  }
 
-.main__text {
-	font-size: 20px;
-}
+  #file-selector__label {
+    height: 140px;
+  }
 
-#file-selector__label {
-	height: 140px;
-}
+  .fields_label {
+    font-size: 14px;
+  }
 
-.fields_label {
-	font-size: 14px;
-}
-
-.form__fields {
-	font-size: 12px;
-}
-
+  .form__fields {
+    font-size: 12px;
+  }
 }
 
 @media (min-width: 769px) and (max-width: 992px) {
+  .header__title {
+    font-size: 36px;
+  }
 
-.header__title {
-	font-size: 36px;
-}
+  .main__text {
+    font-size: 20px;
+  }
 
-.main__text {
-	font-size: 20px;
-}
+  #file-selector__label {
+    height: 160px;
+  }
 
-#file-selector__label {
-	height: 160px;
-}
+  .fields_label {
+    font-size: 16px;
+  }
 
-.fields_label {
-	font-size: 16px;
-}
-
-.form__fields {
-	font-size: 14px;
-}
-
+  .form__fields {
+    font-size: 14px;
+  }
 }
 
 @media (min-width: 993px) and (max-width: 1200px) {
+  .header__title {
+    font-size: 48px;
+  }
 
-.header__title {
-	font-size: 48px;
-}
+  .main__text {
+    font-size: 24px;
+  }
 
-.main__text {
-	font-size: 24px;
-}
+  #file-selector__label {
+    height: 180px;
+  }
 
-#file-selector__label {
-	height: 180px;
-}
+  .fields_label {
+    font-size: 16px;
+  }
 
-.fields_label {
-	font-size: 16px;
-}
-
-.form__fields {
-	font-size: 14px;
-}
-
+  .form__fields {
+    font-size: 14px;
+  }
 }
 
 @media (min-width: 1200px) {
+  .header__title {
+    font-size: 48px;
+  }
 
+  .main__text {
+    font-size: 24px;
+  }
 
-.header__title {
-	font-size: 48px;
-}
+  #file-selector__label {
+    height: 220px;
+  }
 
-.main__text {
-	font-size: 24px;
-}
+  .fields_label {
+    font-size: 18px;
+  }
 
-#file-selector__label {
-	height: 220px;
-}
-
-.fields_label {
-	font-size: 18px;
-}
-
-.form__fields {
-	font-size: 16px;
-}
-
+  .form__fields {
+    font-size: 16px;
+  }
 }
