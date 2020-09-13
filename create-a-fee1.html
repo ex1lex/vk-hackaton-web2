@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <title>Целевой сбор</title>
+
+    <!-- Подключение скриптов -->
+    <script src="scripts/jQuery.js"></script>
+    <script src="scripts/bootstrap.bundle.js"></script>
+    <script src="scripts/script.js"></script>
+    <!-- Подключение скриптов -->
+
+    <!-- Подключение стилей -->
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/ce0e6e479c.css"> -->
+    <link rel="stylesheet" type="text/css" href="styles/reset.css" />
+    <link rel="stylesheet" type="text/css" href="styles/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="styles/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    <!-- Подключение стилей -->
+  </head>
+
+  <body>
+    <div class="container page">
+      <div class="row">
+        <p class="col-12">Сбор</p>
+        <div class="col-12">
+          <form action="">
+            <input
+              type="file"
+              name="file"
+              id="file-selector"
+              class="inputfile"
+            />
+            <label for="file-selector">
+              <img id="output" style="width: 100%" />
+              <p>
+                (Не забудь вставить иконку. Надпись кликабельна и грузит
+                изображение. Это и будет кнопкой для загрузки изображения. Можно
+                сделать и по своему, не как в фигме) Загрузить обложку
+              </p></label
+            >
+            <div></div>
+            <script>
+              // загрузка изображения будет в тег img с id=output
+              const output = document.getElementById("output");
+              if (window.FileList && window.File && window.FileReader) {
+                document
+                  .getElementById("file-selector")
+                  .addEventListener("change", (event) => {
+                    output.src = "";
+                    const file = event.target.files[0];
+                    if (!file.type) {
+                      alert("Неправильный тип файла");
+                      return;
+                    }
+                    if (!file.type.match("image.*")) {
+                      alert("Невозможно прочитать изображение");
+                      return;
+                    }
+                    const reader = new FileReader();
+                    reader.addEventListener("load", (event) => {
+                      output.src = event.target.result;
+                    });
+                    reader.readAsDataURL(file);
+                  });
+              }
+            </script>
+            <p>Название сбора</p>
+            <input type="text" placeholder="Название сбора" />
+            <p>Сумма, &#8381;</p>
+            <input type="text" placeholder="Сколько нужно собрать?" />
+            <p>Цель</p>
+            <input type="text" placeholder="Например, лечение человека" />
+            <p>Описание</p>
+            <input
+              type="text"
+              placeholder="На что пойдут деньги и как они кому-то помогут?"
+            />
+            <p>Куда получать деньги</p>
+            <select>
+              <option>Счёт 1</option>
+              <option>Счёт 2</option>
+            </select>
+            <p>Сбор завершится</p>
+            <input type="radio" name="feeFinish" id="" value="" />
+            <span>Когда соберём сумму</span>
+            <input
+              type="radio"
+              name="feeFinish"
+              id=""
+              value=""
+              class="radio-date"
+            />
+            <span>В определённую дату</span>
+            <div class="input-date">
+              <p>Дата окончания</p>
+              <input type="date" name="" id="" />
+            </div>
+            <style>
+              .input-date {
+                display: none;
+              }
+              .radio-date:checked ~ .input-date {
+                display: block;
+              }
+            </style>
+            <p>Автор</p>
+            <input type="text" placeholder="Как вас зовут" />
+            <input type="submit" value="Создать сбор" />
+          </form>
+          <style>
+            /* эти стили для кнопки загрузки изображения, чтобы изменить надпись, можжешь их поменять, не забудь убрать их в файил стилей */
+            .inputfile {
+              width: 0.1px;
+              height: 0.1px;
+              opacity: 0;
+              overflow: hidden;
+              position: absolute;
+              z-index: -1;
+            }
+            .inputfile:focus + label {
+              outline: 1px dotted #000;
+              outline: -webkit-focus-ring-color auto 5px;
+            }
+            .inputfile + label * {
+              pointer-events: none;
+            }
+          </style>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
